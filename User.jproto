@@ -1,0 +1,9 @@
+JSONProto.User {
+    var id: Int
+    var rate: Float
+    var rate: Float?
+    var name: String?
+    var is_active: Bool
+    var friends: Array<JSONProto.User>
+    var child: JSONProto.User
+}
