@@ -33,7 +33,7 @@ struct ElixirExporter: Exporter {
             return ":\(prop.name)"
             }.joined(separator: ", ") + "]\n"
         
-        let properties = "  defscruct [" + model.properties
+        let properties = "  defstruct [" + model.properties
             .sorted(by: { (lhs, rhs) -> Bool in
                 if case .array = lhs.type { return false }
                 
