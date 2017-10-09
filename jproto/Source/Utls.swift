@@ -8,6 +8,11 @@
 
 import Foundation
 
+enum JProtoError: Error {
+    case invalidExportUrl
+}
+
+
 func matches(for regex: String, in text: String) -> [String] {
     
     do {

@@ -15,6 +15,11 @@
 		24FA84C91F8637890050FCB1 /* Utls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FA84C81F8637890050FCB1 /* Utls.swift */; };
 		24FA84CC1F86480B0050FCB1 /* Property.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FA84CB1F86480B0050FCB1 /* Property.swift */; };
 		24FA84CE1F8648A20050FCB1 /* SwiftExporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FA84CD1F8648A20050FCB1 /* SwiftExporter.swift */; };
+		24FA84D01F8775500050FCB1 /* KotlinExporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FA84CF1F8775500050FCB1 /* KotlinExporter.swift */; };
+		24FA84D21F87878E0050FCB1 /* ElixirExporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FA84D11F87878E0050FCB1 /* ElixirExporter.swift */; };
+		24FA84D81F8794690050FCB1 /* CommandLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FA84D61F8792E30050FCB1 /* CommandLine.swift */; };
+		24FA84D91F8794690050FCB1 /* Option.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FA84D71F8792E30050FCB1 /* Option.swift */; };
+		24FA84DA1F8794690050FCB1 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FA84D51F8792E30050FCB1 /* StringExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -40,6 +45,11 @@
 		24FA84CA1F86392A0050FCB1 /* User.jproto */ = {isa = PBXFileReference; lastKnownFileType = text; path = User.jproto; sourceTree = SOURCE_ROOT; };
 		24FA84CB1F86480B0050FCB1 /* Property.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Property.swift; sourceTree = "<group>"; };
 		24FA84CD1F8648A20050FCB1 /* SwiftExporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftExporter.swift; sourceTree = "<group>"; };
+		24FA84CF1F8775500050FCB1 /* KotlinExporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KotlinExporter.swift; sourceTree = "<group>"; };
+		24FA84D11F87878E0050FCB1 /* ElixirExporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElixirExporter.swift; sourceTree = "<group>"; };
+		24FA84D51F8792E30050FCB1 /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		24FA84D61F8792E30050FCB1 /* CommandLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandLine.swift; sourceTree = "<group>"; };
+		24FA84D71F8792E30050FCB1 /* Option.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Option.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,17 +82,38 @@
 		24FA84B81F861F830050FCB1 /* jproto */ = {
 			isa = PBXGroup;
 			children = (
+				24FA84D31F8792270050FCB1 /* Dependencies */,
 				24FA84CA1F86392A0050FCB1 /* User.jproto */,
 				24FA84B91F861F830050FCB1 /* main.swift */,
+				24FA84D41F8792360050FCB1 /* Source */,
+			);
+			path = jproto;
+			sourceTree = "<group>";
+		};
+		24FA84D31F8792270050FCB1 /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				24FA84D61F8792E30050FCB1 /* CommandLine.swift */,
+				24FA84D71F8792E30050FCB1 /* Option.swift */,
+				24FA84D51F8792E30050FCB1 /* StringExtensions.swift */,
+			);
+			path = Dependencies;
+			sourceTree = "<group>";
+		};
+		24FA84D41F8792360050FCB1 /* Source */ = {
+			isa = PBXGroup;
+			children = (
 				24FA84C01F8623510050FCB1 /* ValueType.swift */,
 				24FA84C21F8623840050FCB1 /* Platform.swift */,
 				24FA84C41F86239E0050FCB1 /* Exporter.swift */,
 				24FA84CD1F8648A20050FCB1 /* SwiftExporter.swift */,
+				24FA84CF1F8775500050FCB1 /* KotlinExporter.swift */,
+				24FA84D11F87878E0050FCB1 /* ElixirExporter.swift */,
 				24FA84C61F8626F90050FCB1 /* Reader.swift */,
 				24FA84CB1F86480B0050FCB1 /* Property.swift */,
 				24FA84C81F8637890050FCB1 /* Utls.swift */,
 			);
-			path = jproto;
+			path = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,13 +174,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24FA84D01F8775500050FCB1 /* KotlinExporter.swift in Sources */,
 				24FA84CC1F86480B0050FCB1 /* Property.swift in Sources */,
 				24FA84C31F8623840050FCB1 /* Platform.swift in Sources */,
+				24FA84D81F8794690050FCB1 /* CommandLine.swift in Sources */,
+				24FA84D91F8794690050FCB1 /* Option.swift in Sources */,
 				24FA84BA1F861F830050FCB1 /* main.swift in Sources */,
 				24FA84C71F8626F90050FCB1 /* Reader.swift in Sources */,
+				24FA84D21F87878E0050FCB1 /* ElixirExporter.swift in Sources */,
 				24FA84CE1F8648A20050FCB1 /* SwiftExporter.swift in Sources */,
 				24FA84C91F8637890050FCB1 /* Utls.swift in Sources */,
 				24FA84C51F86239F0050FCB1 /* Exporter.swift in Sources */,
+				24FA84DA1F8794690050FCB1 /* StringExtensions.swift in Sources */,
 				24FA84C11F8623510050FCB1 /* ValueType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
