@@ -1,21 +1,21 @@
 # jproto
-JSON Prototyping Tool
+### JSON Prototyping Tool
 
 Simple command line to that allows you prototype your json models across platforms. It supports:
 
 • iOS with Swift 4.0 and JSONCodable
+
 • Kotlin
+
 • Elixir
 
-Following types are supported:
 
-•Int
-•String
-•Float
-•Array
-•Bool
+### Following types are supported:
+[Int, String, Float, Array, Bool]
 
-This tool also handles for you optional types. So how it works? Prototype your model like this:
+This tool also handles for you optional types. 
+
+### So how it works? Prototype your model like this:
 
 ```
 JSONProto.User {
@@ -27,7 +27,7 @@ JSONProto.User {
 }
 ```
 
-Run tool:
+### Run tool:
 
 ```
 Usage: /Users/piotrbernad/Downloads/proto/jproto [options]
@@ -41,7 +41,7 @@ Usage: /Users/piotrbernad/Downloads/proto/jproto [options]
       Add -s flag to generate every model in to separate file
 ```
 
-and get exported files like:
+### Get exported files like:
 
 • Swift:
 ```
