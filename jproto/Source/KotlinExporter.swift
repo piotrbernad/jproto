@@ -15,6 +15,8 @@ struct KotlinExporter: Exporter {
     
     let fileExtension = ".kt"
     
+    var package: String = ""
+    
     init(separateFiles: Bool, classPrefix: String, exportBaseURL: URL) {
         self.separateFiles = separateFiles
         self.classPrefix = classPrefix
@@ -37,6 +39,36 @@ struct KotlinExporter: Exporter {
         let structure = header + properties + ")"
         
         return structure
+    }
+    
+    func exportModels(models: [ModelDescription]) throws {
+        let files = try models.map { (model) -> ExporterOutput in
+            return try processModel(model)
+        }
+        
+        if !separateFiles {
+            
+            let content: String
+            
+            if self.package.characters.count > 0 {
+                content = (["package " + self.package] + files.map { $0.fileContent }).joined(separator: "\n\n")
+            } else {
+                content = files.map { $0.fileContent }.joined(separator: "\n\n")
+            }
+            
+            let fileName = "APIModels" + fileExtension
+            
+            try write(content: content, toURL: urlFor(fileName: fileName))
+            
+            return
+        }
+        
+        let content = try files.map { ($0.fileContent, ($0.model.name + fileExtension)) }.map { (content, file) -> Void in
+            let url = urlFor(fileName: file)
+            try write(content: content, toURL: url)
+        }
+        
+        
     }
     
     private func valueDescription(_ val: ValueType) -> String {

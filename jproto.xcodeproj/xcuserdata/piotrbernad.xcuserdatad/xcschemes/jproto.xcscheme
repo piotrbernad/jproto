@@ -65,7 +65,7 @@
       </BuildableProductRunnable>
       <CommandLineArguments>
          <CommandLineArgument
-            argument = "--platform swift -d &quot;/Users/piotrbernad/appunite/jproto/&quot; "
+            argument = "--platform kotlin -d &quot;/Users/piotrbernad/appunite/jproto/&quot;  --package com.tahmeel.models"
             isEnabled = "YES">
          </CommandLineArgument>
       </CommandLineArguments>

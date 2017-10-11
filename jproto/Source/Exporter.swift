@@ -72,12 +72,14 @@ extension Exporter {
     }
 }
 
-func exporterForPlatform(_ platform: Platform, separateFiles: Bool, classPrefix: String, exportBaseURL: URL) -> Exporter {
+func exporterForPlatform(_ platform: Platform, separateFiles: Bool, classPrefix: String, exportBaseURL: URL, package: String = "") -> Exporter {
     switch platform {
     case .swift:
         return SwiftExporter(separateFiles: separateFiles, classPrefix: classPrefix, exportBaseURL: exportBaseURL)
     case .kotlin:
-        return KotlinExporter(separateFiles: separateFiles, classPrefix: classPrefix, exportBaseURL: exportBaseURL)
+        var ke = KotlinExporter(separateFiles: separateFiles, classPrefix: classPrefix, exportBaseURL: exportBaseURL)
+        ke.package = package
+        return ke
     case .elixir:
         return ElixirExporter(separateFiles: separateFiles, classPrefix: classPrefix, exportBaseURL: exportBaseURL)
     }

@@ -2,4 +2,70 @@
 <Bucket
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "jproto/Source/Exporter.swift"
+            timestampString = "529419694.934774"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "exportModels(models:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(extension in jproto):jproto.Exporter.exportModels(models: Swift.Array&lt;jproto.ModelDescription&gt;) throws -&gt; ()"
+                  moduleName = "jproto"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/piotrbernad/appunite/jproto/jproto/Source/Exporter.swift"
+                  timestampString = "529419695.49165"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "39"
+                  endingLineNumber = "39"
+                  offsetFromSymbolStart = "57">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (jproto.ModelDescription) throws -&gt; jproto.ExporterOutput in (extension in jproto):jproto.Exporter.exportModels(models: Swift.Array&lt;jproto.ModelDescription&gt;) throws -&gt; ()"
+                  moduleName = "jproto"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/piotrbernad/appunite/jproto/jproto/Source/Exporter.swift"
+                  timestampString = "529419695.49542"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "40"
+                  endingLineNumber = "40"
+                  offsetFromSymbolStart = "47">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "jproto/main.swift"
+            timestampString = "529419694.934933"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "unknown"
+            landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>
