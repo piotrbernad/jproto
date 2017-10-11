@@ -36,9 +36,13 @@ Usage: /Users/piotrbernad/Downloads/proto/jproto [options]
   -d, --dir:
       Dir to search proto files
   --prefix:
-      Path to the output file.
+      Prefix for classes (Module name in case of elixir)
   -s:
       Add -s flag to generate every model in to separate file
+  -o, --output:
+      Output path to export files
+  --package:
+      Package for Kotlin export
 ```
 
 ### Get exported files like:
